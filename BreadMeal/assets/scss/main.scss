@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+
+}
+
+header {
+    // border: 3px solid black;
+    // height: 100px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        height: 100%;
+
+        .logo {
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+
+                width: 100%;
+            }
+        }
+
+        .links {
+            height: 100%;
+
+            .dots {
+                display: none;
+            }
+
+            ul {
+                height: 100%;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+
+                li { background-color: #ffffff;
+
+                    a {
+                        &:hover {
+                            color: #e46e49;
+
+                        }
+
+                        color: #7e5a4e;
+                    }
+                }
+
+                .dropdown {
+                    position: relative;
+
+                    ul {
+                        background-color: #ffffff;
+                        position: absolute;
+                        display: none !important;
+                        border-left: 3px solid #7e5a4e;
+                        padding: 13px 15px;
+                        font-size: 16px;
+                        
+
+                        
+
+
+                    }
+
+                    &:hover {
+                        a {
+                            color: #7e5a4e;
+
+                        }
+
+                        ul { 
+                            
+                            display: block !important;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+
+        .contact {
+            display: flex;
+            height: 100%;
+            // align-items: center;
+            justify-content: center;
+            background-color: #7e5a4e;
+            
+
+
+            .icon-text {
+                display: flex;
+
+
+                .icon {
+
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        border: 2px solid white;
+                        border-radius: 50%;
+                        padding: 8px;
+                        font-size: 20px;
+                        color: #ffffff;
+                        margin-right: 10px;
+
+                    }
+
+                }
+
+                .text {
+                    a {
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: #ffffff;
+                    }
+
+                    p {
+                        color: #ffffff;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .links {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: none !important;
+        }
+    }
+
+    .dots {
+        display: block !important;
+        font-size: 25px;
+        font-weight: bold;
+        color: #7e5a4e;
+    }
+
+}
+
+main { 
+    
+
+    .hero {
+        height: 367px;
+    
+            background-image: url(https://newkit.moxcreative.com/breadmeal/wp-content/uploads/sites/6/2022/07/different-types-of-bread-with-spikelets-.jpg); 
+            background-size: cover;
+        
+    
+
+        .container { 
+                     .title{  height: 100%;
+                         display: flex;
+                          justify-content: center;
+                          flex-direction: column;
+                        
+                        
+                         h1{      
+                            color: #ffffff; 
+                            font-weight: bold;
+                            
+                    
+                         }   
+
+                         ul{ 
+                             padding: 0 !important ;
+                            align-items: center;
+                              .gradient{  
+                                margin: 0 10px;
+                                width:10px;
+                                height: 3px;
+                                background: rgb(255, 136, 0);
+                                background: linear-gradient(0deg, rgba(255, 136, 0, 1) 0%, rgba(255, 150, 53, 1) 100%, rgba(255, 255, 255, 1) 100%);
+
+                              }
+                             display: flex; 
+                            li{ 
+                                span{  
+                                    
+                                    color: #ffffff;
+                                 }
+                             }
+                             
+                         }
+                         
+                     }
+        }
+    } 
+    
+   .cards{ 
+     background-image: url(https://newkit.moxcreative.com/breadmeal/wp-content/uploads/sites/6/2022/07/43.jpg); 
+
+    background-size: cover;
+            
+        .card{    
+            
+            border: none !important;
+            margin-top: 40px;
+            
+            .img { width: 380px;
+                height: 350px;
+                position: relative;
+                
+                
+                img{ height: 100%;
+                    width: 100%;   
+
+                }  
+            
+        
+            
+                .line{
+                    
+                    background-color: #ffffff;
+                    position: absolute;
+                        right: 20px;
+                        top: 20px;
+                    span{
+                       letter-spacing: 2px;
+                       font-size: 14px; 
+                       font-weight: 800px;
+                       padding: 9px 15px;
+                        
+                    } 
+                }
+                } 
+                .title{
+                    background-color: #ffffff;
+                    padding: 20px 30px;
+
+                    h3{ color: #3a001e;
+                        font-size: 27px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 15px;
+                        color: #757575;
+                    }
+                    span{
+                        color: #e46e49;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+   } 
+
